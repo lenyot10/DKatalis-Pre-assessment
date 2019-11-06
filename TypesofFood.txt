@@ -1,0 +1,43 @@
+import React, {Component} from 'react';
+import { View, Text} from 'react-native';
+
+const TypesOfFruit = () => {
+  return (
+      <View>
+        <Text>Fruits:</Text>
+        <View>
+          <Text>Apples</Text>
+          <Text>Blueberries</Text>
+          <Text>Strawberries</Text>
+          <Text>Bananas</Text>
+        </View>
+      </View>
+  );
+};
+
+const Fruits = () => {
+  return (
+      <View>
+
+        <TypesOfFruit />
+
+      </View>
+  );
+};
+
+class TypesOfFood extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+        <View>
+          <Text>Types of Food:</Text>
+
+            <Fruits />
+
+        </View>
+    );
+  }
+}
